@@ -1,0 +1,8 @@
+[Unit]
+Description=Our stuff
+After=syslog.target network.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/tank_entry.sh
+[Install]
+WantedBy=multi-user.target

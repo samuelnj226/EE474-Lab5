@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.group10.tankdrive.MainActivity">
+
+    <ImageButton android:id="@+id/left"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/button_selector"
+        android:rotation="270"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/up"
+        android:layout_toStartOf="@+id/up" />
+
+    <ImageButton android:id="@+id/up"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/button_selector"
+        android:layout_above="@+id/left"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton android:id="@+id/down"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/button_selector"
+        android:rotation="180"
+        android:layout_below="@+id/right"
+        android:layout_toRightOf="@+id/left"
+        android:layout_toEndOf="@+id/left" />
+
+    <ImageButton android:id="@+id/right"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/button_selector"
+        android:rotation="90"
+        android:layout_below="@+id/up"
+        android:layout_toRightOf="@+id/up"
+        android:layout_toEndOf="@+id/up" />
+
+    <SeekBar android:id="@+id/speed"
+        style="@style/SeekBar"
+        android:splitTrack="false"
+        android:thumbOffset="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/down"
+        />
+
+    <ImageButton android:id="@+id/power"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/power_button_selector"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@null"/>
+
+    <ImageButton android:id="@+id/self_drive"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/self_drive_button_selector"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton android:id="@+id/tilt"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/tilt_button_selector"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
