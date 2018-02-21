@@ -55,19 +55,19 @@
 #define LEN 12
 
 struct Pwm {
-  char *period_p;
-  char *duty_p;
-  char *run_p;
+    char *period_p;
+    char *duty_p;
+    char *run_p;
 
-  char *slot;
-  int duty; 
+    char *slot;
+    int duty; 
 };
 
 struct Gpio {
-  int num;
-  
-  char *value_p;
-  char *direction_p;
+    int num;
+
+    char *value_p;
+    char *direction_p;
 };
 
 
